@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #04a1bf;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin: 30px 100px;
+  height: 80vh;
+}
+
+.itemsPanel {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.title {
+  color: #ffffff;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.helpText {
+  margin: 30px auto;
+}
+
+.helpText p {
+  margin-top: 10px;
+  color: #ffcd5d;
+  font-weight: 600;
+}
+
+.inputPlace {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: #025f70;
+  font-weight: normal;
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75 ease;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+
+.btn:hover {
+  background-color: #02798f;
+  color: #ffcd5d;
+}
+
+.lsWrapper {
+  height: 57%;
+  margin-top: 10px;
+  margin-right: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.listContainer {
+  overflow: auto;
+  height: 90%;
+}
+
+.myList {
+  text-align: left;
+  margin: 20px auto;
+  width: 80%;
+  color: #ffffff;
+}
+
+.myList li {
+  list-style: none;
+  padding: 10px 20px;
+
+  text-transform: capitalize;
+  font-weight: 600;
+  border-bottom: 2px solid #4eb9cd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background: #e8aeb7;
+  transition: all 0.75s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5 ease;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+
+.myList li:hover {
+  background: #e8c7de;
+}
+
+.clearList {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.myList li > button {
+  font-weight: normal;
+  background: none;
+  border: none;
+  padding: 2px 4px;
+  margin-left: 10px;
+  float: right;
+  color: #025f70;
+  font-weight: 800;
+}
+
+#nameInput {
+  width: 65%;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+}
+
+#descrInput {
+  width: 80%;
+  height: 50px;
+  margin: 10px auto;
+  display: block;
+  resize: none;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.error-message {
+  width: 80%;
+  height: 20px;
+  margin: auto;
+  color: #f51414;
+  font-size: 13px;
+  text-align: left;
+}
+
+.done {
+  background: #51df70 !important;
+  color: #00891e;
+}
+
+.infoPanel {
+  float: right;
+  width: 50%;
+  padding: 10px;
+  background-color: #ffffff;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.history {
+  position: relative;
+  height: 50%;
+}
+
+.clearHistory {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.infoPanel h1 {
+  color: #ffffff;
+  background-color: #04a1bf;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.historyContainer {
+  height: 75%;
+  overflow: auto;
+}
+
+.myHistory {
+  font-size: 12px;
+}
+.myHistory li {
+  border-bottom: 2px #76cfe0 solid;
+  text-align: left;
+  margin: 10px;
+}
+
+.addTask {
+  display: inline-block;
+  color: white;
+  background-color: #04aa6d;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-right: 15px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+
+.dTask {
+  display: inline-block;
+  color: white;
+  background-color: #ff3636e6;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-right: 15px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+.date {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.detail {
+  text-align: left;
+  font-weight: 500;
+}
+.detail div {
+  margin: 15px 0 10px 15px;
+}
+
+.infoTitle {
+  padding: 5px 15px;
+  display: inline-block;
+  background: rgb(239 239 239);
+  width: 80%;
+  border-radius: 4px;
+  border-bottom: 2px solid #4eb9cd;
+}
+
+.infoDate {
+  text-align: center;
+  padding: 5px 15px;
+  display: inline-block;
+  background: rgb(239 239 239);
+  width: 15%;
+  border-radius: 4px;
+  border-bottom: 2px solid #4eb9cd;
+}
+
+.infoDescr {
+  margin: 10px 20px;
+  padding: 20px;
+  height: 150px;
+  display: block;
+  background: rgb(239 239 239);
+  border-radius: 10px;
+  border-bottom: 2px solid #4eb9cd;
+}
+
+.infoName {
+  display: inline-block;
+  color: white;
+  background-color: #04a1bf;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-right: 15px;
+}
+
+.shadow {
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
